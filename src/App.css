@@ -10,6 +10,7 @@ div #canvas {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff9f', endColorstr='#d600ff',GradientType=0 ); /* IE6-9 */
 }
 #container {
+  overflow: hidden;
   width: 100vw;
   height: 80vh;
   position: relative;
@@ -24,5 +25,6 @@ div #canvas {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 
