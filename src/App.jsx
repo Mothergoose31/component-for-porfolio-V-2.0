@@ -17,7 +17,7 @@ export default class App extends Component {
             <Route  exact path ="/">
               <Three id='id'/>
               <h1 id='header'>Joseph Beech</h1>
-              </Route>
+            </Route>
             </div>
           
           <Route path ='/about'>
