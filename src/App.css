@@ -1,5 +1,6 @@
-@import url('./style/nav.css');
+@import url("./style/nav.css");
 @import url("./style/aboutPage.css");
+@import url("./style/WordHeader.css");
 div #canvas {
   
   width: 100%;
@@ -19,13 +20,6 @@ div #canvas {
   color: white;
 }
 
- #header {
-   color:black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 
 
