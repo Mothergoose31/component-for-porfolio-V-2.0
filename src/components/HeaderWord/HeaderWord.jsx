@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 export default class HeaderWord extends Component {
-    render() {
-    var wordInterval;
+    componentDidMount(){
+        var wordInterval;
     var currentWord = 0;
     var words = [];
     var wordArray = [];
@@ -12,6 +12,7 @@ export default class HeaderWord extends Component {
     function startWords () {
         try {
         words = document.getElementsByClassName('word');
+        console.log("start words started")
 
         currentWord = 0;
         wordArray = [];
@@ -24,6 +25,7 @@ export default class HeaderWord extends Component {
         changeWord();
         clearInterval(wordInterval);
         wordInterval = setInterval(changeWord, 4000);
+        
         } catch (error) {
         // Ruh-roh - there are no wordz
         // No worries
@@ -31,8 +33,9 @@ export default class HeaderWord extends Component {
     }
 
     function changeWord() {
+        console.log("change words started")
         var cw = wordArray[currentWord];
-        var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+        var nw = currentWord === words.length-1 ? wordArray[0] : wordArray[currentWord+1];
         for (var i = 0; i < cw.length; i++) {
         animateLetterOut(cw, i);
         }
@@ -43,25 +46,29 @@ export default class HeaderWord extends Component {
             animateLetterIn(nw, i);
         }
 
-    currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+    currentWord = (currentWord === wordArray.length-1) ? 0 : currentWord+1;
     }
 
     function animateLetterOut(cw, i) {
+        console.log("animate letter out started")
         setTimeout(function() {
     		cw[i].className = 'letter out';
         }, i*80);
     }
 
     function animateLetterIn(nw, i) {
+        console.log("animate letter in started")
         setTimeout(function() {
     		nw[i].className = 'letter in';
         }, 340+(i*80));
     }
 
     function splitLetters(word) {
+        console.log("split letters started")
         var content = word.innerText;
         word.innerText = '';
         var letters = [];
+
         for (var i = 0; i < content.length; i++) {
             var letter = document.createElement('span');
             letter.className = 'letter';
@@ -71,6 +78,9 @@ export default class HeaderWord extends Component {
         }
     wordArray.push(letters);
     }
+    }
+    render() {
+    
         return (
             <div>
                 <h1>
