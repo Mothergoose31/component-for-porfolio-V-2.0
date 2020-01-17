@@ -11,10 +11,10 @@ import * as THREE from "three";
 class Three extends Component {
   componentDidMount() {
     var renderer,scene,camera,circle,skelet,particle;
-    window.onload = function() {
+    
         init();
         animate();
-    }
+    
 
     
     function init() {
