@@ -1,4 +1,5 @@
 @import url('./style/nav.css');
+@import url("./style/aboutPage.css");
 div #canvas {
   
   width: 100%;
@@ -25,6 +26,10 @@ div #canvas {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+
+
 
 
 
