@@ -108,6 +108,19 @@ export default class HeaderWord extends Component {
                         <span className='letter out'>u</span>
                         <span className='letter out'>y</span>
                         <span className='letter out'>.</span>
+
+                    </span> 
+                    <span className='word' style={{opacity:1}}>
+                        <span className='letter out'>H</span>
+                        <span className='letter out'>i</span>
+                        <span className='letter out'>r</span>
+                        <span className='letter out'>e</span>
+                        <span className='letter out'>{'\u00A0'}</span>
+                        <span className='letter out'>m</span>
+                        <span className='letter out'>e</span>
+                        <span className='letter out'>!</span>
+                        <span className='letter out'>!</span>
+
                     </span> 
                 </h1>
             </div>

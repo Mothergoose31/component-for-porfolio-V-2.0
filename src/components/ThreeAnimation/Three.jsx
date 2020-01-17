@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Projects from "../Projects/Projects"
 import * as THREE from "three";
 
 // For  Three.js in react 
@@ -134,6 +135,7 @@ class Three extends Component {
     return (
     <>
         <div id='canvas'></div>
+        <Projects/>
     </>
     )
     }

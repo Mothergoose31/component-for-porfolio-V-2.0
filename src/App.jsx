@@ -6,6 +6,7 @@ import Nav from './components/Nav/Nav'
 import Three from './components/ThreeAnimation/Three'
 import About  from './components/AboutPage/About'
 import HeaderWord from "./components/HeaderWord/HeaderWord"
+import Projects from './components/Projects/Projects'
 
 export default class App extends Component {
   render() {
@@ -19,6 +20,7 @@ export default class App extends Component {
             <Route  exact path ="/">
               <Three id='id'/>
               <HeaderWord/>
+              
             </Route>
             </div>
           

@@ -1,0 +1,11 @@
+.projects{
+    height: 80vh;
+    width: 100vw;
+}
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    background:#465162 url("../images/tile.png") 0 0 repeat;
+
+    color:black;
+}
